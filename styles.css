@@ -1,0 +1,146 @@
+:root {
+    --black: rgba(32,33,36,1);
+    --gray: rgba(232,234,237,.08);
+    --blue: #8ab4f8;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 60px 1fr min-content;
+    background-color: var(--black);
+    font-family: arial,sans-serif;
+    height: 100vh;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    gap: 1em;
+}
+
+header a,i {
+    color: white;
+}
+
+.bx-border-circle {
+    border: none;
+    padding: 0.25em;
+}
+
+header i:hover {
+    background-color: var(--gray);
+}
+/*HEADER*/
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.input-search {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 5px;
+    width: 90%;
+    height: 50px;
+    border: 1px solid var(--gray);
+    max-width: 584px;
+    border-radius: 24px;
+}
+
+.input-search input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.input-search:hover {
+    background-color: var(--gray);
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search button{
+    background-color: var(--gray);
+    color: white;
+    border: 1px solid var(--black);
+    padding: 10px 15px;
+}
+
+.search button:hover {
+    border: 1px solid white;
+}
+
+main p {
+    color: white;
+}
+
+main a {
+    color: var(--blue);
+}
+/*MAIN*/
+/**/
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer_links {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px 30px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 20px;
+    color: white;
+}
+
+footer ul a {
+    color: white;
+}
+
+footer .country {
+    padding: 10px 30px;
+}
+/**/
